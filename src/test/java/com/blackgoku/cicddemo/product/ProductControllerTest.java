@@ -30,6 +30,6 @@ class ProductControllerTest {
                 ));
 
         mockMvc.perform(get("/api/v1/products"))
-                .andExpect(status().isOk());
+                .andExpect(status().isCreated());
     }
 }
