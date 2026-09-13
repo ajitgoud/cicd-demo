@@ -39,3 +39,6 @@ jobs:
         with:
           name: test-reports
           path: target/surefire-reports
+
+      - name: Build Docker image
+        run: docker build -t cicd-demo:latest .
