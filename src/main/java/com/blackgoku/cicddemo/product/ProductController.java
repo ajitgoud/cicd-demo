@@ -36,4 +36,9 @@ public class ProductController {
     public void deleteProduct(@PathVariable Long id) {
         productService.deleteProduct(id);
     }
+
+    @GetMapping("/version")
+    public String version() {
+        return "v2";
+    }
 }
